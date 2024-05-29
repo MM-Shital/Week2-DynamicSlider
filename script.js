@@ -151,7 +151,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
     // Initialize Splide slider
     const slider = new Splide("#dynamic__slider", {
-      type: "loop",
+      type  : 'fade',
       perPage: 1,
       perMove: 1,
       pagination: false,
@@ -176,7 +176,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
       // Apply background color change with a delay to trigger the transition effect after a short delay
       setTimeout(() => {
-        navbar.style.backgroundColor = activeSlide.backgroundColor;
+        // navbar.style.backgroundColor = activeSlide.backgroundColor;
         homepage.style.backgroundColor = activeSlide.backgroundColor;
 
         // Re-enable transition for future changes
